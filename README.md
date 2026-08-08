@@ -25,47 +25,46 @@
 ## 📁 Структура проекта
 ```text
 src/
-├── assets/
-&nbsp;&nbsp;&nbsp;&nbsp;└── microphon.png
-├── components/
-&nbsp;&nbsp;&nbsp;&nbsp;├── App/
-&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── App.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── AddTodo.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── CheckboxButton.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── CheckIcon.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── DeadlainBlock.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteButton.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteCompletedButton.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteConfirmModal.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── Header.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── Loader.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── MainContent.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── Notification.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── PlusIcon.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── TodoEditForm.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── TodoFilter.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── TodoItem.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── TodoList.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;├── TodoTextDisplay.jsx
-&nbsp;&nbsp;&nbsp;&nbsp;└── ToggleTheme.jsx
-├── constants/
-&nbsp;&nbsp;&nbsp;&nbsp;└── todo.js
-├── contexts/
-&nbsp;&nbsp;&nbsp;&nbsp;└── NetworkContext.js
-├── hooks/
-&nbsp;&nbsp;&nbsp;&nbsp;├── todoHelpers.js
-&nbsp;&nbsp;&nbsp;&nbsp;├── useLocalStorage.js
-&nbsp;&nbsp;&nbsp;&nbsp;├── useTodoApi.js
-&nbsp;&nbsp;&nbsp;&nbsp;├── useTodoAction.js
-&nbsp;&nbsp;&nbsp;&nbsp;└── useToDoManangment.js
-├── providers/
-&nbsp;&nbsp;&nbsp;&nbsp;└── NetworkProvider.jsx
-├── helpers/
-&nbsp;&nbsp;&nbsp;&nbsp;├── dateUtils.js
-&nbsp;&nbsp;&nbsp;&nbsp;├── getInishialTheme.js
-&nbsp;&nbsp;&nbsp;&nbsp;└── toggleTheme.js
-├── main.css
-└── main.jsx
+├── assets/ # Статические изображения (microphon.png)
+├── components/ # React компоненты
+│ ├── App/ # Главный компонент приложения
+│ │ └── App.jsx
+│ ├── AddTodo.jsx # Форма добавления задачи (включая голос)
+│ ├── CheckboxButton.jsx # Кастомный чекбокс
+│ ├── CheckIcon.jsx # Иконка галочки
+│ ├── DeadlainBlock.jsx # Блок выбора дедлайна
+│ ├── DeleteButton.jsx # Кнопка удаления
+│ ├── DeleteCompletedButton.jsx # Кнопка удаления выполненных
+│ ├── DeleteConfirmModal.jsx # Модальное окно подтверждения
+│ ├── Header.jsx # Заголовок приложения
+│ ├── Loader.jsx # Компонент загрузки
+│ ├── MainContent.jsx # Основной контент (фильтрация, список)
+│ ├── Notification.jsx # Уведомление о статусе сети
+│ ├── PlusIcon.jsx # Иконка плюса
+│ ├── TodoEditForm.jsx # Форма редактирования задачи
+│ ├── TodoFilter.jsx # Фильтр задач
+│ ├── TodoItem.jsx # Карточка задачи (с перетаскиванием)
+│ ├── TodoList.jsx # Список задач (DndContext)
+│ ├── TodoTextDisplay.jsx # Отображение текста задачи
+│ └── ToggleTheme.jsx # Переключатель темы
+├── constants/ # Константы (URL API, ключи localStorage)
+│ └── todo.js
+├── contexts/ # React Context
+│ └── NetworkContext.js
+├── hooks/ # Кастомные хуки
+│ ├── todoHelpers.js # Вспомогательные функции для Todo
+│ ├── useLocalStorage.js # Хук для работы с localStorage
+│ ├── useTodoApi.js # Хук для запросов к API
+│ ├── useTodoAction.js # Логика действий с задачами (CRUD + сортировка)
+│ └── useToDoManangment.js # Логика управления состояниями и API
+├── providers/ # Провайдеры контекстов
+│ └── NetworkProvider.jsx
+├── helpers/ # Вспомогательные функции (форматирование дат, тема)
+│ ├── dateUtils.js
+│ ├── getInishialTheme.js
+│ └── toggleTheme.js
+├── main.css # Tailwind стили и переменные
+└── main.jsx # Точка входа
 
 ## ⚙️ Установка и запуск
 
