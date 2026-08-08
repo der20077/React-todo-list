@@ -23,46 +23,47 @@
 - **Прочее:** Web Speech API (распознавание речи), Context API, кастомные хуки.
 
 ## 📁 Структура проекта
+```text
 src/
 ├── assets/
-│ └── microphon.png
+&nbsp;&nbsp;&nbsp;&nbsp;└── microphon.png
 ├── components/
-│ ├── App/
-│ │ └── App.jsx
-│ ├── AddTodo.jsx
-│ ├── CheckboxButton.jsx
-│ ├── CheckIcon.jsx
-│ ├── DeadlainBlock.jsx
-│ ├── DeleteButton.jsx
-│ ├── DeleteCompletedButton.jsx
-│ ├── DeleteConfirmModal.jsx
-│ ├── Header.jsx
-│ ├── Loader.jsx
-│ ├── MainContent.jsx
-│ ├── Notification.jsx
-│ ├── PlusIcon.jsx
-│ ├── TodoEditForm.jsx
-│ ├── TodoFilter.jsx
-│ ├── TodoItem.jsx
-│ ├── TodoList.jsx
-│ ├── TodoTextDisplay.jsx
-│ └── ToggleTheme.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── App/
+&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└── App.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── AddTodo.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── CheckboxButton.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── CheckIcon.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── DeadlainBlock.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteButton.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteCompletedButton.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── DeleteConfirmModal.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── Header.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── Loader.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── MainContent.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── Notification.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── PlusIcon.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── TodoEditForm.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── TodoFilter.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── TodoItem.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── TodoList.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;├── TodoTextDisplay.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;└── ToggleTheme.jsx
 ├── constants/
-│ └── todo.js
+&nbsp;&nbsp;&nbsp;&nbsp;└── todo.js
 ├── contexts/
-│ └── NetworkContext.js
+&nbsp;&nbsp;&nbsp;&nbsp;└── NetworkContext.js
 ├── hooks/
-│ ├── todoHelpers.js
-│ ├── useLocalStorage.js
-│ ├── useTodoApi.js
-│ ├── useTodoAction.js
-│ └── useToDoManangment.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── todoHelpers.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── useLocalStorage.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── useTodoApi.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── useTodoAction.js
+&nbsp;&nbsp;&nbsp;&nbsp;└── useToDoManangment.js
 ├── providers/
-│ └── NetworkProvider.jsx
+&nbsp;&nbsp;&nbsp;&nbsp;└── NetworkProvider.jsx
 ├── helpers/
-│ ├── dateUtils.js
-│ ├── getInishialTheme.js
-│ └── toggleTheme.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── dateUtils.js
+&nbsp;&nbsp;&nbsp;&nbsp;├── getInishialTheme.js
+&nbsp;&nbsp;&nbsp;&nbsp;└── toggleTheme.js
 ├── main.css
 └── main.jsx
 
