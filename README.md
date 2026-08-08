@@ -23,49 +23,48 @@
 - **Прочее:** Web Speech API (распознавание речи), Context API, кастомные хуки.
 
 ## 📁 Структура проекта
-
 src/
-├── assets/ # Статические изображения (microphon.png)
-├── components/ # React компоненты
-│ ├── App/ # Главный компонент приложения
+├── assets/
+│ └── microphon.png
+├── components/
+│ ├── App/
 │ │ └── App.jsx
-│ ├── AddTodo.jsx # Форма добавления задачи (включая голос)
-│ ├── CheckboxButton.jsx # Кастомный чекбокс
-│ ├── CheckIcon.jsx # Иконка галочки
-│ ├── DeadlainBlock.jsx # Блок выбора дедлайна
-│ ├── DeleteButton.jsx # Кнопка удаления
-│ ├── DeleteCompletedButton.jsx # Кнопка удаления выполненных
-│ ├── DeleteConfirmModal.jsx # Модальное окно подтверждения
-│ ├── Header.jsx # Заголовок приложения
-│ ├── Loader.jsx # Компонент загрузки
-│ ├── MainContent.jsx # Основной контент (фильтрация, список)
-│ ├── Notification.jsx # Уведомление о статусе сети
-│ ├── PlusIcon.jsx # Иконка плюса
-│ ├── TodoEditForm.jsx # Форма редактирования задачи
-│ ├── TodoFilter.jsx # Фильтр задач
-│ ├── TodoItem.jsx # Карточка задачи (с перетаскиванием)
-│ ├── TodoList.jsx # Список задач (DndContext)
-│ ├── TodoTextDisplay.jsx # Отображение текста задачи
-│ └── ToggleTheme.jsx # Переключатель темы
-├── constants/ # Константы (URL API, ключи localStorage)
+│ ├── AddTodo.jsx
+│ ├── CheckboxButton.jsx
+│ ├── CheckIcon.jsx
+│ ├── DeadlainBlock.jsx
+│ ├── DeleteButton.jsx
+│ ├── DeleteCompletedButton.jsx
+│ ├── DeleteConfirmModal.jsx
+│ ├── Header.jsx
+│ ├── Loader.jsx
+│ ├── MainContent.jsx
+│ ├── Notification.jsx
+│ ├── PlusIcon.jsx
+│ ├── TodoEditForm.jsx
+│ ├── TodoFilter.jsx
+│ ├── TodoItem.jsx
+│ ├── TodoList.jsx
+│ ├── TodoTextDisplay.jsx
+│ └── ToggleTheme.jsx
+├── constants/
 │ └── todo.js
-├── contexts/ # React Context
+├── contexts/
 │ └── NetworkContext.js
-├── hooks/ # Кастомные хуки
-│ ├── todoHelpers.js # Вспомогательные функции для Todo
-│ ├── useLocalStorage.js # Хук для работы с localStorage
-│ ├── useTodoApi.js # Хук для запросов к API
-│ ├── useTodoAction.js # Логика действий с задачами (CRUD + сортировка)
-│ └── useToDoManangment.js # Логика управления состояниями и API
-├── providers/ # Провайдеры контекстов
+├── hooks/
+│ ├── todoHelpers.js
+│ ├── useLocalStorage.js
+│ ├── useTodoApi.js
+│ ├── useTodoAction.js
+│ └── useToDoManangment.js
+├── providers/
 │ └── NetworkProvider.jsx
-├── helpers/ # Вспомогательные функции (форматирование дат, тема)
+├── helpers/
 │ ├── dateUtils.js
 │ ├── getInishialTheme.js
 │ └── toggleTheme.js
-├── main.css # Tailwind стили и переменные
-└── main.jsx # Точка входа
-
+├── main.css
+└── main.jsx
 
 ## ⚙️ Установка и запуск
 
