@@ -24,7 +24,7 @@
 
 ## 📁 Структура проекта
 src/
-├── assets/
+├── assets/                                                                      
 │ └── microphon.png
 ├── components/
 │ ├── App/
